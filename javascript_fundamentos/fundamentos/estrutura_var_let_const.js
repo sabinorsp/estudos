@@ -79,7 +79,7 @@ function exemploConst(){
 em um ambiente ECMAScripot 5 ou anteior. 
 * use let quando quiser declarar uma variavel com escopo de bloco e que pode ser 
 reatribuida
-* use const quando quiser declarar uma variável quenão deve ser reatribuida. 
+* use const quando quiser declarar uma variável que não deve ser reatribuida. 
 
 o uso de let e const sobre var é mais procurado devido a seus escopos 
 mais previsíveis e a capacidade de evitar reatribuição acidentais. 

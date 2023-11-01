@@ -87,3 +87,44 @@ function inverso(valor){
 }
 console.log('R - Ex6:')
 inverso(23)
+
+
+/*
+Crie uma função que receba quatro números como parametros (numero, minimo, maximo, inclusivo)
+e retorne se o parametro numero ( o primeiro) está entre minimo e maximo. Quando o parametro
+inclusivo for true, tenha "entre" como inclusivo, ou seja, considerando se numero é igual a 
+minimo ou a maximo. Caso o parametro inclusivo não seja informado, seu valor padrão deverá ser
+false, portanto, a lógico será exclusiva, não considerando se numero é igual a minimo ou a máximo.
+ */
+function estaEntre(numero, minimo, maximo, inclusivo=false){
+    if (inclusivo == false){
+        if (numero > minimo && numero < maximo){
+            console.log(`Número ${numero} está entre o ${minimo} e ${maximo}....`)
+        }else{
+            console.log(`O número não está entre os intervalos de ${minimo} e ${maximo}`)
+        }
+    }else{
+        if (numero >= minimo && numero <= maximo){
+            console.log(`Número ${numero} está entre o ${minimo} e ${maximo}`)
+        }else{
+            console.log(`O número não está entre os intervalos de ${minimo} e ${maximo}`)
+        }
+    }
+}
+console.log('R - Ex7:')
+estaEntre(10,10,20, inclusivo = true)
+
+
+/*
+Desenvolva uma função que recebe dois números inteiros não negativos (maiores ou iguais a zero)
+e realize a multiplicação deles. Porém, não utilize o operador de multiplicação.
+*/
+function multiplicar(num1, num2){
+    let soma = 0
+    for(let i=1; i <= num1; i++){
+        soma += num2
+    }
+    console.log(`O valor da multiplicação entre ${num1} e ${num2} é igual: ${soma}`)
+}
+console.log('R - Ex8:')
+multiplicar(5,8)
